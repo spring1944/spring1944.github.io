@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring: 1944</title>
+    <link>https://spring1944.github.io/</link>
+    <description>Recent content on Spring: 1944</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Sep 2015 16:06:52 +0200</lastBuildDate>
+    <atom:link href="https://spring1944.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sortie de Spring 1944 "Operation Overlord (v2.0)"</title>
+      <link>https://spring1944.github.io/post/v2.0/</link>
+      <pubDate>Sat, 26 Sep 2015 16:06:52 +0200</pubDate>
+      
+      <guid>https://spring1944.github.io/post/v2.0/</guid>
+      <description>&lt;p&gt;Eeeet encore une !&lt;/p&gt;
+
+&lt;p&gt;The Spring: 1944 team is overjoyed to bring you Spring: 1944 v2.0, Operation
+Overlord!&lt;/p&gt;
+
+&lt;p&gt;This release includes all kinds of goodies, but the major features are two (!)
+new factions: Japan and Italy. In addition, the naval game has been entirely
+revamped — ships now have individually controllable/targetable turrets.&lt;/p&gt;
+
+&lt;p&gt;These days Spring lobbies will automatically download the game when you join
+one of our hosts, so if you want to play, just grab Spring or Weblobby, join
+the #s44 channel, and pop into one of our games.&lt;/p&gt;
+
+&lt;p&gt;Happy gaming, and hope to see you in #s44 :)&lt;/p&gt;
+
+&lt;p&gt;The S44 Team&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Operation Neptune (v1.7) Released!</title>
+      <link>https://spring1944.github.io/post/v1.7/</link>
+      <pubDate>Tue, 30 Sep 2014 22:44:18 +0200</pubDate>
+      
+      <guid>https://spring1944.github.io/post/v1.7/</guid>
+      <description>&lt;p&gt;Evidently two releases in two months wore us out for a whole year :)&lt;/p&gt;
+
+&lt;p&gt;We (the S44 devs) are incredibly pleased to release Spring:1944 v1.7 “Operation
+Neptune”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;gbr-lcgm.jpg&#34; alt=&#34;GBR LCGM&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main features in this release are a whole bunch of visual updates to our
+ships, and a handful of new naval units — all of this through yuritch’s most
+excellent work.&lt;/p&gt;
+
+&lt;p&gt;This release also includes a large number of bugfixes and updates for newer
+Spring engine versions.&lt;/p&gt;
+
+&lt;p&gt;Have fun, see you on #s44 or the forums!&lt;/p&gt;
+
+&lt;p&gt;The Spring: 1944 Team&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About S44</title>
+      <link>https://spring1944.github.io/about/</link>
+      <pubDate>Fri, 26 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://spring1944.github.io/about/</guid>
+      <description>
+
+&lt;p&gt;Spring: 1944 is an open source Real Time Strategy game set in the final year of
+WWII. Think of it like a cross between Company of Heroes and Supreme Commander,
+as designed by someone who played neither.&lt;/p&gt;
+
+&lt;h3 id=&#34;history:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;History&lt;/h3&gt;
+
+&lt;p&gt;Originally begun in 2002 as a single-unit modification for Total Annihilation
+called Axis &amp;amp; Allies TA, the game has since grown well beyond its original
+plans. The mod was completed in August of 2005, with the main dev at that point
+(M_26_7 / SpikedHelmet) deciding it was time to move on. Not long after, an
+early version of the Spring engine was released — an engine designed to run
+content from Total Annihilation, and Axis &amp;amp; Allies TA was soon ported by a fan,
+and then by FLOZi in November of 2005. The port was then released in December
+2006 with a few bits of new content (mostly infantry models) and updated game
+play elements.&lt;/p&gt;
+
+&lt;p&gt;After that release, AATA was reborn as Spring: 1944 – a complete re-build from
+scratch, using all-new content and a new design philosophy. While our release
+schedule has been a tad on the erratic side, work has been progressing
+continuously ever since 2006, with published builds going out approximately
+once or twice a year. The game reached a nearly completed state between
+2010-2011, and most of the work since that point has focused on balance,
+a handful of new gameplay mechanics, cleaning up the game’s internals and
+smoothing out the experience for new players.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
