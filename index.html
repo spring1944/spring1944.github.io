@@ -1,743 +1,198 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spring:1944 &mdash; Free, Open Source WWII RTS</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid%2bSans%3a400%2c700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toast-css/1.0.0/grid.min.css">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./images/S44-logo-vector.png"/>
-    <link href="https://spring1944.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Spring:1944" />
-    <meta name="title" content="https://spring1944.github.io">
-    <link rel="canonical" href="https://spring1944.github.io">
-    <meta property="og:title" content="Spring:1944"/>
-    <meta property="og:url" content="https://spring1944.github.io"/>
-    <meta property="og:image" content="https://spring1944.github.io/images/S44-logo-vector.png"/>
-    <meta property="og:site_name" content="Spring:1944">
+  <title>Spring:1944 &mdash; Free, Open Source WWII RTS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flat-ui.min.css">
+  <link rel="stylesheet" href="css/imgslider.min.css">
+  <link rel="stylesheet" href="css/s44.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/imgslider.min.js"></script>
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./images/S44-logo-vector.png"/>
+  <link href="https://spring1944.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Spring:1944" />
+  <meta name="title" content="https://spring1944.github.io">
+  <link rel="canonical" href="https://spring1944.github.io">
+  <meta property="og:title" content="Spring:1944"/>
+  <meta property="og:url" content="https://spring1944.github.io"/>
+  <meta property="og:image" content="https://spring1944.github.io/images/S44-logo-vector.png"/>
+  <meta property="og:site_name" content="Spring:1944">
 </head>
 <body>
 
-<section class="site-nav">
-    <header>
-        <nav id="navigation">
-            <a class="brand" href="/">
-                <img src="./images/S44-logo-vector.png" alt="Inc">
-            </a>
-            <a href="./" class="home">Home</a>
-            <a href="./media">Media</a>
-            <a href="./play">Play</a>
-            <a href="./learn">Learn</a>
-            <a href="./maps">Maps</a>
-            <a href="./about">Contact/About</a>
-        </nav>
-        <nav class="tagline">
-            <span>Free, Open Source WWII RTS</span>
-        </nav>
-    </header>
-</section>
-
-
+<!-- Video fixed background -->
 <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
-    <source src="./videos/s44_bg.webm" type="video/webm" />
+  <source src="./videos/s44_bg.webm" type="video/webm" />
 </video>
 
-
-<div class="blog-cover">
-    <section>
-        <div class="container">
-			<h1><img width="20%" src="./images/S44-logo-vector.png"
-				alt="Inc"></h1>
-            <h3>Free, Open Source WWII RTS</h3>
-
-
-
-            <a href="https://github.com/spring1944" title="Follow on Github" target="_blank"><i class="icon icon-github"></i></a>
-
-
-            <a href="./index.xml" title="RSS Feed">
-                <i class="icon icon-rss"></i>
-            </a>
-        </div>
-    </section>
-</div>
-
-
-<div class="grid">
-    <article class="container-expanded">
-        <section class="index">
-        <div>
-            <h2 class="title"><a href="about/" rel="prefetch">A WWII RTS game</a></h2>
-
-
-            <p>Spring: 1944 is an open source Real Time Strategy game set in the final year of WWII. Think of it like a cross between Company of Heroes and Supreme Commander, as designed by someone who played neither.</p>
-
-            <div class="meta">
-                Written By <address>S44 Team</address> &mdash;
-                <time pubdate datetime="2014-09-26" title="2014-09-26">September 9, 2014</time>
-            </div>
-        </div>
-        </section>
-        <section class="index">
-        <div>
-            <h2 class="title"><a href="about/" rel="prefetch">Select your faction</a></h2>
-
-
-            <p>Currently 8 factions are supported in S44</p>
-
-        </div>
-        <center style="background-color:rgba(0,0,0,0.05)">
-            <img width="2%" src="./images/gbr.png" alt="GBR">
-            <img width="2%" src="./images/rus.png" alt="RUS">
-            <img width="2%" src="./images/us.png" alt="US">
-            <img width="2%" src="./images/ger.png" alt="GER">
-            <img width="2%" src="./images/jpn.png" alt="JPN">
-            <img width="2%" src="./images/ita.png" alt="ITA">
-            <img width="2%" src="./images/hun.png" alt="HUN">
-            <img width="2%" src="./images/swe.png" alt="SWE">
-        </center>
-        </section>
-        <section class="index">
-        <div>
-            <h2 class="title"><a href="about/" rel="prefetch">Hundreds of units</a></h2>
-
-            <p>Fight on land, sea and air with hundreds of different units and buildings</p>
-
-        </div>
-        <center style="background-color:rgba(0,0,0,0.05)">
-            <!-- List autogenerated with images/unitpics/filenames_tohtml.py -->
-            <img width="2%" src="images/unitpics/GBR17Pdr_Stationary.png" alt="GBR17Pdr_Stationary">
-            <img width="2%" src="images/unitpics/GBR17Pdr_Truck.png" alt="GBR17Pdr_Truck">
-            <img width="2%" src="images/unitpics/GBR25Pdr_Stationary.png" alt="GBR25Pdr_Stationary">
-            <img width="2%" src="images/unitpics/GBR25Pdr_Truck.png" alt="GBR25Pdr_Truck">
-            <img width="2%" src="images/unitpics/GBR3InMortar.png" alt="GBR3InMortar">
-            <img width="2%" src="images/unitpics/GBR45inGun_Stationary.png" alt="GBR45inGun_Stationary">
-            <img width="2%" src="images/unitpics/GBR45inGun_Truck.png" alt="GBR45inGun_Truck">
-            <img width="2%" src="images/unitpics/GBRAECMkII.png" alt="GBRAECMkII">
-            <img width="2%" src="images/unitpics/GBRAPMineSign.png" alt="GBRAPMineSign">
-            <img width="2%" src="images/unitpics/GBRATMineSign.png" alt="GBRATMineSign">
-            <img width="2%" src="images/unitpics/GBRAssaultBoat.png" alt="GBRAssaultBoat">
-            <img width="2%" src="images/unitpics/GBRAuster.png" alt="GBRAuster">
-            <img width="2%" src="images/unitpics/GBRBarracks.png" alt="GBRBarracks">
-            <img width="2%" src="images/unitpics/GBRBedfordTruck.png" alt="GBRBedfordTruck">
-            <img width="2%" src="images/unitpics/GBRBoatyard.png" alt="GBRBoatyard">
-            <img width="2%" src="images/unitpics/GBRBofors_Stationary.png" alt="GBRBofors_Stationary">
-            <img width="2%" src="images/unitpics/GBRBofors_Truck.png" alt="GBRBofors_Truck">
-            <img width="2%" src="images/unitpics/GBRBren.png" alt="GBRBren">
-            <img width="2%" src="images/unitpics/GBRChurchillMkVII.png" alt="GBRChurchillMkVII">
-            <img width="2%" src="images/unitpics/GBRCommando.png" alt="GBRCommando">
-            <img width="2%" src="images/unitpics/GBRCromwell.png" alt="GBRCromwell">
-            <img width="2%" src="images/unitpics/GBRCromwellMkVI.png" alt="GBRCromwellMkVI">
-            <img width="2%" src="images/unitpics/GBRDaimler.png" alt="GBRDaimler">
-            <img width="2%" src="images/unitpics/GBRFairmileD.png" alt="GBRFairmileD">
-            <img width="2%" src="images/unitpics/GBRGliderSupplies.png" alt="GBRGliderSupplies">
-            <img width="2%" src="images/unitpics/GBRGunyard.png" alt="GBRGunyard">
-            <img width="2%" src="images/unitpics/GBRHQ.png" alt="GBRHQ">
-            <img width="2%" src="images/unitpics/GBRHQEngineer.png" alt="GBRHQEngineer">
-            <img width="2%" src="images/unitpics/GBRHorsa.png" alt="GBRHorsa">
-            <img width="2%" src="images/unitpics/GBRKangaroo.png" alt="GBRKangaroo">
-            <img width="2%" src="images/unitpics/GBRLCA.png" alt="GBRLCA">
-            <img width="2%" src="images/unitpics/GBRLCGM.png" alt="GBRLCGM">
-            <img width="2%" src="images/unitpics/GBRLCSL.png" alt="GBRLCSL">
-            <img width="2%" src="images/unitpics/GBRLZ.png" alt="GBRLZ">
-            <img width="2%" src="images/unitpics/GBRM10Achilles.png" alt="GBRM10Achilles">
-            <img width="2%" src="images/unitpics/GBRM5Halftrack.png" alt="GBRM5Halftrack">
-            <img width="2%" src="images/unitpics/GBRMatadorEngVehicle.png" alt="GBRMatadorEngVehicle">
-            <img width="2%" src="images/unitpics/GBRObserv.png" alt="GBRObserv">
-            <img width="2%" src="images/unitpics/GBRPIAT.png" alt="GBRPIAT">
-            <img width="2%" src="images/unitpics/GBRPara3InMortar.png" alt="GBRPara3InMortar">
-            <img width="2%" src="images/unitpics/GBRParaBREN.png" alt="GBRParaBREN">
-            <img width="2%" src="images/unitpics/GBRParaM8Gun.png" alt="GBRParaM8Gun">
-            <img width="2%" src="images/unitpics/GBRParaObserv.png" alt="GBRParaObserv">
-            <img width="2%" src="images/unitpics/GBRParaPIAT.png" alt="GBRParaPIAT">
-            <img width="2%" src="images/unitpics/GBRParaRifle.png" alt="GBRParaRifle">
-            <img width="2%" src="images/unitpics/GBRParaSTEN.png" alt="GBRParaSTEN">
-            <img width="2%" src="images/unitpics/GBRPontoonRaft.png" alt="GBRPontoonRaft">
-            <img width="2%" src="images/unitpics/GBRPontoonTruck.png" alt="GBRPontoonTruck">
-            <img width="2%" src="images/unitpics/GBRRadar.png" alt="GBRRadar">
-            <img width="2%" src="images/unitpics/GBRRifle.png" alt="GBRRifle">
-            <img width="2%" src="images/unitpics/GBRSTEN.png" alt="GBRSTEN">
-            <img width="2%" src="images/unitpics/GBRSandbagMG.png" alt="GBRSandbagMG">
-            <img width="2%" src="images/unitpics/GBRSatchelCharge.png" alt="GBRSatchelCharge">
-            <img width="2%" src="images/unitpics/GBRSexton.png" alt="GBRSexton">
-            <img width="2%" src="images/unitpics/GBRShermanFirefly.png" alt="GBRShermanFirefly">
-            <img width="2%" src="images/unitpics/GBRSniper.png" alt="GBRSniper">
-            <img width="2%" src="images/unitpics/GBRSpitfireMkIX.png" alt="GBRSpitfireMkIX">
-            <img width="2%" src="images/unitpics/GBRSpitfireMkXIV.png" alt="GBRSpitfireMkXIV">
-            <img width="2%" src="images/unitpics/GBRStaghound.png" alt="GBRStaghound">
-            <img width="2%" src="images/unitpics/GBRStorage.png" alt="GBRStorage">
-            <img width="2%" src="images/unitpics/GBRStorageCamo.png" alt="GBRStorageCamo">
-            <img width="2%" src="images/unitpics/GBRSupplyDepot.png" alt="GBRSupplyDepot">
-            <img width="2%" src="images/unitpics/GBRTankObstacle.png" alt="GBRTankObstacle">
-            <img width="2%" src="images/unitpics/GBRTankYard.png" alt="GBRTankYard">
-            <img width="2%" src="images/unitpics/GBRTruckSupplies.png" alt="GBRTruckSupplies">
-            <img width="2%" src="images/unitpics/GBRTyphoon.png" alt="GBRTyphoon">
-            <img width="2%" src="images/unitpics/GBRVehicleYard.png" alt="GBRVehicleYard">
-            <img width="2%" src="images/unitpics/GBRVickers.png" alt="GBRVickers">
-            <img width="2%" src="images/unitpics/GBRWasp.png" alt="GBRWasp">
-            <img width="2%" src="images/unitpics/GBRjeep.png" alt="GBRjeep">
-            <img width="2%" src="images/unitpics/gbrlct.png" alt="gbrlct">
-            <img width="2%" src="images/unitpics/RUS61K_Stationary.png" alt="RUS61K_Stationary">
-            <img width="2%" src="images/unitpics/RUS61K_Truck.png" alt="RUS61K_Truck">
-            <img width="2%" src="images/unitpics/RUSA19_Stationary.png" alt="RUSA19_Stationary">
-            <img width="2%" src="images/unitpics/RUSA19_Truck.png" alt="RUSA19_Truck">
-            <img width="2%" src="images/unitpics/RUSAPMineSign.png" alt="RUSAPMineSign">
-            <img width="2%" src="images/unitpics/RUSATMineSign.png" alt="RUSATMineSign">
-            <img width="2%" src="images/unitpics/RUSAssaultBoat.png" alt="RUSAssaultBoat">
-            <img width="2%" src="images/unitpics/RUSBA64.png" alt="RUSBA64">
-            <img width="2%" src="images/unitpics/RUSBKA1125.png" alt="RUSBKA1125">
-            <img width="2%" src="images/unitpics/RUSBM13N.png" alt="RUSBM13N">
-            <img width="2%" src="images/unitpics/RUSBMO.png" alt="RUSBMO">
-            <img width="2%" src="images/unitpics/RUSBarracks.png" alt="RUSBarracks">
-            <img width="2%" src="images/unitpics/RUSBoatyard.png" alt="RUSBoatyard">
-            <img width="2%" src="images/unitpics/RUSCommissar.png" alt="RUSCommissar">
-            <img width="2%" src="images/unitpics/RUSDP.png" alt="RUSDP">
-            <img width="2%" src="images/unitpics/RUSEngineer.png" alt="RUSEngineer">
-            <img width="2%" src="images/unitpics/RUSG5.png" alt="RUSG5">
-            <img width="2%" src="images/unitpics/RUSGAZAAA.png" alt="RUSGAZAAA">
-            <img width="2%" src="images/unitpics/RUSGunyard.png" alt="RUSGunyard">
-            <img width="2%" src="images/unitpics/RUSIS2.png" alt="RUSIS2">
-            <img width="2%" src="images/unitpics/RUSISU152.png" alt="RUSISU152">
-            <img width="2%" src="images/unitpics/RUSIl2.png" alt="RUSIl2">
-            <img width="2%" src="images/unitpics/RUSIl2PTAB.png" alt="RUSIl2PTAB">
-            <img width="2%" src="images/unitpics/RUSKomsMTB.png" alt="RUSKomsMTB">
-            <img width="2%" src="images/unitpics/RUSLa5FN.png" alt="RUSLa5FN">
-            <img width="2%" src="images/unitpics/RUSM30_Stationary.png" alt="RUSM30_Stationary">
-            <img width="2%" src="images/unitpics/RUSM30_Truck.png" alt="RUSM30_Truck">
-            <img width="2%" src="images/unitpics/RUSM5Halftrack.png" alt="RUSM5Halftrack">
-            <img width="2%" src="images/unitpics/RUSMortar.png" alt="RUSMortar">
-            <img width="2%" src="images/unitpics/RUSObserv.png" alt="RUSObserv">
-            <img width="2%" src="images/unitpics/RUSPDrop.png" alt="RUSPDrop">
-            <img width="2%" src="images/unitpics/RUSPPSh.png" alt="RUSPPSh">
-            <img width="2%" src="images/unitpics/RUSPShack.png" alt="RUSPShack">
-            <img width="2%" src="images/unitpics/RUSPTRD.png" alt="RUSPTRD">
-            <img width="2%" src="images/unitpics/RUSPartisanRifle.png" alt="RUSPartisanRifle">
-            <img width="2%" src="images/unitpics/RUSPo2.png" alt="RUSPo2">
-            <img width="2%" src="images/unitpics/RUSPo2Partisan.png" alt="RUSPo2Partisan">
-            <img width="2%" src="images/unitpics/RUSPontoonRaft.png" alt="RUSPontoonRaft">
-            <img width="2%" src="images/unitpics/RUSPontoonTruck.png" alt="RUSPontoonTruck">
-            <img width="2%" src="images/unitpics/RUSPr161.png" alt="RUSPr161">
-            <img width="2%" src="images/unitpics/RUSPr165PB.png" alt="RUSPr165PB">
-            <img width="2%" src="images/unitpics/RUSPr165_turret_B24.png" alt="RUSPr165_turret_B24">
-            <img width="2%" src="images/unitpics/RUSPr165_turret_DshK.png" alt="RUSPr165_turret_DshK">
-            <img width="2%" src="images/unitpics/RUSRPG43.png" alt="RUSRPG43">
-            <img width="2%" src="images/unitpics/RUSRadar.png" alt="RUSRadar">
-            <img width="2%" src="images/unitpics/RUSRifle.png" alt="RUSRifle">
-            <img width="2%" src="images/unitpics/RUSSU100.png" alt="RUSSU100">
-            <img width="2%" src="images/unitpics/RUSSU85.png" alt="RUSSU85">
-            <img width="2%" src="images/unitpics/RUSSandbagMG.png" alt="RUSSandbagMG">
-            <img width="2%" src="images/unitpics/RUSSniper.png" alt="RUSSniper">
-            <img width="2%" src="images/unitpics/RUSStorage.png" alt="RUSStorage">
-            <img width="2%" src="images/unitpics/RUSSu76.png" alt="RUSSu76">
-            <img width="2%" src="images/unitpics/RUSSupplyDepot.png" alt="RUSSupplyDepot">
-            <img width="2%" src="images/unitpics/RUSSupplyTruck.png" alt="RUSSupplyTruck">
-            <img width="2%" src="images/unitpics/RUST3476.png" alt="RUST3476">
-            <img width="2%" src="images/unitpics/RUST3485.png" alt="RUST3485">
-            <img width="2%" src="images/unitpics/RUST60.png" alt="RUST60">
-            <img width="2%" src="images/unitpics/RUST70.png" alt="RUST70">
-            <img width="2%" src="images/unitpics/RUSTankObstacle.png" alt="RUSTankObstacle">
-            <img width="2%" src="images/unitpics/RUSTankYard.png" alt="RUSTankYard">
-            <img width="2%" src="images/unitpics/RUSTender15t.png" alt="RUSTender15t">
-            <img width="2%" src="images/unitpics/RUSTruckSupplies.png" alt="RUSTruckSupplies">
-            <img width="2%" src="images/unitpics/RUSValentine.png" alt="RUSValentine">
-            <img width="2%" src="images/unitpics/RUSVehicleYard.png" alt="RUSVehicleYard">
-            <img width="2%" src="images/unitpics/RUSYak3.png" alt="RUSYak3">
-            <img width="2%" src="images/unitpics/RUSZiS2_Stationary.png" alt="RUSZiS2_Stationary">
-            <img width="2%" src="images/unitpics/RUSZiS2_Truck.png" alt="RUSZiS2_Truck">
-            <img width="2%" src="images/unitpics/RUSZiS3_Stationary.png" alt="RUSZiS3_Stationary">
-            <img width="2%" src="images/unitpics/RUSZiS3_Truck.png" alt="RUSZiS3_Truck">
-            <img width="2%" src="images/unitpics/RUSZiS5.png" alt="RUSZiS5">
-            <img width="2%" src="images/unitpics/RUS_BKA_1125_Turret_76mm.png" alt="RUS_BKA_1125_Turret_76mm">
-            <img width="2%" src="images/unitpics/RUS_NI_Rifle.png" alt="RUS_NI_Rifle">
-            <img width="2%" src="images/unitpics/RUSgaz67.png" alt="RUSgaz67">
-            <img width="2%" src="images/unitpics/RUSk31.png" alt="RUSk31">
-            <img width="2%" src="images/unitpics/ruslct.png" alt="ruslct">
-            <img width="2%" src="images/unitpics/USAPMineSign.png" alt="USAPMineSign">
-            <img width="2%" src="images/unitpics/USATMineSign.png" alt="USATMineSign">
-            <img width="2%" src="images/unitpics/USAssaultBoat.png" alt="USAssaultBoat">
-            <img width="2%" src="images/unitpics/USBAR.png" alt="USBAR">
-            <img width="2%" src="images/unitpics/USBarracks.png" alt="USBarracks">
-            <img width="2%" src="images/unitpics/USBazooka.png" alt="USBazooka">
-            <img width="2%" src="images/unitpics/USBoatyard.png" alt="USBoatyard">
-            <img width="2%" src="images/unitpics/USC47.png" alt="USC47">
-            <img width="2%" src="images/unitpics/USDUKW.png" alt="USDUKW">
-            <img width="2%" src="images/unitpics/USDUKWSupplies.png" alt="USDUKWSupplies">
-            <img width="2%" src="images/unitpics/USEngineer.png" alt="USEngineer">
-            <img width="2%" src="images/unitpics/USFlamethrower.png" alt="USFlamethrower">
-            <img width="2%" src="images/unitpics/USGMCEngVehicle.png" alt="USGMCEngVehicle">
-            <img width="2%" src="images/unitpics/USGMCTruck.png" alt="USGMCTruck">
-            <img width="2%" src="images/unitpics/USGunYard.png" alt="USGunYard">
-            <img width="2%" src="images/unitpics/USHQ.png" alt="USHQ">
-            <img width="2%" src="images/unitpics/USHQEngineer.png" alt="USHQEngineer">
-            <img width="2%" src="images/unitpics/USL4.png" alt="USL4">
-            <img width="2%" src="images/unitpics/USLCSS.png" alt="USLCSS">
-            <img width="2%" src="images/unitpics/USLCVP.png" alt="USLCVP">
-            <img width="2%" src="images/unitpics/USLVTA4.png" alt="USLVTA4">
-            <img width="2%" src="images/unitpics/USM10Wolverine.png" alt="USM10Wolverine">
-            <img width="2%" src="images/unitpics/USM16MGMC.png" alt="USM16MGMC">
-            <img width="2%" src="images/unitpics/USM1Bofors_Stationary.png" alt="USM1Bofors_Stationary">
-            <img width="2%" src="images/unitpics/USM1Bofors_Truck.png" alt="USM1Bofors_Truck">
-            <img width="2%" src="images/unitpics/USM1_45inGun_Stationary.png" alt="USM1_45inGun_Stationary">
-            <img width="2%" src="images/unitpics/USM1_45inGun_Truck.png" alt="USM1_45inGun_Truck">
-            <img width="2%" src="images/unitpics/USM2Gun_Stationary.png" alt="USM2Gun_Stationary">
-            <img width="2%" src="images/unitpics/USM2Gun_Truck.png" alt="USM2Gun_Truck">
-            <img width="2%" src="images/unitpics/USM36jackson.png" alt="USM36jackson">
-            <img width="2%" src="images/unitpics/USM3Halftrack.png" alt="USM3Halftrack">
-            <img width="2%" src="images/unitpics/USM4A3105Sherman.png" alt="USM4A3105Sherman">
-            <img width="2%" src="images/unitpics/USM4A376Sherman.png" alt="USM4A376Sherman">
-            <img width="2%" src="images/unitpics/USM4A4Sherman.png" alt="USM4A4Sherman">
-            <img width="2%" src="images/unitpics/USM4Jumbo.png" alt="USM4Jumbo">
-            <img width="2%" src="images/unitpics/USM5Gun_Stationary.png" alt="USM5Gun_Stationary">
-            <img width="2%" src="images/unitpics/USM5Gun_Truck.png" alt="USM5Gun_Truck">
-            <img width="2%" src="images/unitpics/USM5Stuart.png" alt="USM5Stuart">
-            <img width="2%" src="images/unitpics/USM7Priest.png" alt="USM7Priest">
-            <img width="2%" src="images/unitpics/USM8Greyhound.png" alt="USM8Greyhound">
-            <img width="2%" src="images/unitpics/USM8Gun.png" alt="USM8Gun">
-            <img width="2%" src="images/unitpics/USM8Scott.png" alt="USM8Scott">
-            <img width="2%" src="images/unitpics/USMG.png" alt="USMG">
-            <img width="2%" src="images/unitpics/USMortar.png" alt="USMortar">
-            <img width="2%" src="images/unitpics/USObserv.png" alt="USObserv">
-            <img width="2%" src="images/unitpics/USP47Thunderbolt.png" alt="USP47Thunderbolt">
-            <img width="2%" src="images/unitpics/USP51DMustang.png" alt="USP51DMustang">
-            <img width="2%" src="images/unitpics/USP51DMustangGA.png" alt="USP51DMustangGA">
-            <img width="2%" src="images/unitpics/USPT103.png" alt="USPT103">
-            <img width="2%" src="images/unitpics/USParaBAR.png" alt="USParaBAR">
-            <img width="2%" src="images/unitpics/USParaBazooka.png" alt="USParaBazooka">
-            <img width="2%" src="images/unitpics/USParaMG.png" alt="USParaMG">
-            <img width="2%" src="images/unitpics/USParaMG_Sandbag.png" alt="USParaMG_Sandbag">
-            <img width="2%" src="images/unitpics/USParaRifle.png" alt="USParaRifle">
-            <img width="2%" src="images/unitpics/USParaThompson.png" alt="USParaThompson">
-            <img width="2%" src="images/unitpics/USPontoonRaft.png" alt="USPontoonRaft">
-            <img width="2%" src="images/unitpics/USPontoonTruck.png" alt="USPontoonTruck">
-            <img width="2%" src="images/unitpics/USRadar.png" alt="USRadar">
-            <img width="2%" src="images/unitpics/USRifle.png" alt="USRifle">
-            <img width="2%" src="images/unitpics/USSC.png" alt="USSC">
-            <img width="2%" src="images/unitpics/USSandbagMG.png" alt="USSandbagMG">
-            <img width="2%" src="images/unitpics/USSniper.png" alt="USSniper">
-            <img width="2%" src="images/unitpics/USStorage.png" alt="USStorage">
-            <img width="2%" src="images/unitpics/USStorageLarge.png" alt="USStorageLarge">
-            <img width="2%" src="images/unitpics/USSupplyDepot.png" alt="USSupplyDepot">
-            <img width="2%" src="images/unitpics/USTankObstacle.png" alt="USTankObstacle">
-            <img width="2%" src="images/unitpics/USTankYard.png" alt="USTankYard">
-            <img width="2%" src="images/unitpics/USThompson.png" alt="USThompson">
-            <img width="2%" src="images/unitpics/USTruckSupplies.png" alt="USTruckSupplies">
-            <img width="2%" src="images/unitpics/USVehicleYard.png" alt="USVehicleYard">
-            <img width="2%" src="images/unitpics/USjeep.png" alt="USjeep">
-            <img width="2%" src="images/unitpics/USparatrooper.png" alt="USparatrooper">
-            <img width="2%" src="images/unitpics/uslcsl.png" alt="uslcsl">
-            <img width="2%" src="images/unitpics/uslct.png" alt="uslct">
-            <img width="2%" src="images/unitpics/GER10sK18_Stationary.png" alt="GER10sK18_Stationary">
-            <img width="2%" src="images/unitpics/GER10sK18_Truck.png" alt="GER10sK18_Truck">
-            <img width="2%" src="images/unitpics/GERAPMineSign.png" alt="GERAPMineSign">
-            <img width="2%" src="images/unitpics/GERATMineSign.png" alt="GERATMineSign">
-            <img width="2%" src="images/unitpics/GERAssaultBoat.png" alt="GERAssaultBoat">
-            <img width="2%" src="images/unitpics/GERBarracks.png" alt="GERBarracks">
-            <img width="2%" src="images/unitpics/GERBarracksBunker.png" alt="GERBarracksBunker">
-            <img width="2%" src="images/unitpics/GERBarracksNew.png" alt="GERBarracksNew">
-            <img width="2%" src="images/unitpics/GERBf109.png" alt="GERBf109">
-            <img width="2%" src="images/unitpics/GERBoatyard.png" alt="GERBoatyard">
-            <img width="2%" src="images/unitpics/GERFi156.png" alt="GERFi156">
-            <img width="2%" src="images/unitpics/GERFlaK38_Truck.png" alt="GERFlaK38_Truck">
-            <img width="2%" src="images/unitpics/GERFlak38_Stationary.png" alt="GERFlak38_Stationary">
-            <img width="2%" src="images/unitpics/GERFlak40_Twin_Turret.png" alt="GERFlak40_Twin_Turret">
-            <img width="2%" src="images/unitpics/GERFlakTurmG.png" alt="GERFlakTurmG">
-            <img width="2%" src="images/unitpics/GERFw190.png" alt="GERFw190">
-            <img width="2%" src="images/unitpics/GERFw190G.png" alt="GERFw190G">
-            <img width="2%" src="images/unitpics/GERGrW34.png" alt="GERGrW34">
-            <img width="2%" src="images/unitpics/GERGunYard.png" alt="GERGunYard">
-            <img width="2%" src="images/unitpics/GERHQBunker.png" alt="GERHQBunker">
-            <img width="2%" src="images/unitpics/GERHQEngineer.png" alt="GERHQEngineer">
-            <img width="2%" src="images/unitpics/GERJagdPanther.png" alt="GERJagdPanther">
-            <img width="2%" src="images/unitpics/GERJagdpanzerIV.png" alt="GERJagdpanzerIV">
-            <img width="2%" src="images/unitpics/GERJu87G.png" alt="GERJu87G">
-            <img width="2%" src="images/unitpics/GERMAL.png" alt="GERMAL">
-            <img width="2%" src="images/unitpics/GERMG42.png" alt="GERMG42">
-            <img width="2%" src="images/unitpics/GERMP40.png" alt="GERMP40">
-            <img width="2%" src="images/unitpics/GERMarder.png" alt="GERMarder">
-            <img width="2%" src="images/unitpics/GERNebelwerfer_Stationary.png" alt="GERNebelwerfer_Stationary">
-            <img width="2%" src="images/unitpics/GERNebelwerfer_Truck.png" alt="GERNebelwerfer_Truck">
-            <img width="2%" src="images/unitpics/GERObserv.png" alt="GERObserv">
-            <img width="2%" src="images/unitpics/GEROpelBlitz.png" alt="GEROpelBlitz">
-            <img width="2%" src="images/unitpics/GERPaK40_Stationary.png" alt="GERPaK40_Stationary">
-            <img width="2%" src="images/unitpics/GERPaK40_Truck.png" alt="GERPaK40_Truck">
-            <img width="2%" src="images/unitpics/GERPanther.png" alt="GERPanther">
-            <img width="2%" src="images/unitpics/GERPanzerIII.png" alt="GERPanzerIII">
-            <img width="2%" src="images/unitpics/GERPanzerIV.png" alt="GERPanzerIV">
-            <img width="2%" src="images/unitpics/GERPanzerfaust.png" alt="GERPanzerfaust">
-            <img width="2%" src="images/unitpics/GERPanzerschrek.png" alt="GERPanzerschrek">
-            <img width="2%" src="images/unitpics/GERPontoonRaft.png" alt="GERPontoonRaft">
-            <img width="2%" src="images/unitpics/GERPontoonTruck.png" alt="GERPontoonTruck">
-            <img width="2%" src="images/unitpics/GERPuma.png" alt="GERPuma">
-            <img width="2%" src="images/unitpics/GERRBoot.png" alt="GERRBoot">
-            <img width="2%" src="images/unitpics/GERRadar.png" alt="GERRadar">
-            <img width="2%" src="images/unitpics/GERRifle.png" alt="GERRifle">
-            <img width="2%" src="images/unitpics/GERSBoot.png" alt="GERSBoot">
-            <img width="2%" src="images/unitpics/GERSandbagMG.png" alt="GERSandbagMG">
-            <img width="2%" src="images/unitpics/GERSchSturmboot.png" alt="GERSchSturmboot">
-            <img width="2%" src="images/unitpics/GERSdkfz10.png" alt="GERSdkfz10">
-            <img width="2%" src="images/unitpics/GERSdkfz250.png" alt="GERSdkfz250">
-            <img width="2%" src="images/unitpics/GERSdkfz251.png" alt="GERSdkfz251">
-            <img width="2%" src="images/unitpics/GERSdkfz9.png" alt="GERSdkfz9">
-            <img width="2%" src="images/unitpics/GERSiebelFahre.png" alt="GERSiebelFahre">
-            <img width="2%" src="images/unitpics/GERSniper.png" alt="GERSniper">
-            <img width="2%" src="images/unitpics/GERStorage.png" alt="GERStorage">
-            <img width="2%" src="images/unitpics/GERStorageBunker.png" alt="GERStorageBunker">
-            <img width="2%" src="images/unitpics/GERStuGIII.png" alt="GERStuGIII">
-            <img width="2%" src="images/unitpics/GERSupplyDepot.png" alt="GERSupplyDepot">
-            <img width="2%" src="images/unitpics/GERTankObstacle.png" alt="GERTankObstacle">
-            <img width="2%" src="images/unitpics/GERTankYard.png" alt="GERTankYard">
-            <img width="2%" src="images/unitpics/GERTiger.png" alt="GERTiger">
-            <img width="2%" src="images/unitpics/GERTigerII.png" alt="GERTigerII">
-            <img width="2%" src="images/unitpics/GERTruckSupplies.png" alt="GERTruckSupplies">
-            <img width="2%" src="images/unitpics/GERV1.png" alt="GERV1">
-            <img width="2%" src="images/unitpics/GERVehicleYard.png" alt="GERVehicleYard">
-            <img width="2%" src="images/unitpics/GERWespe.png" alt="GERWespe">
-            <img width="2%" src="images/unitpics/GERkubel.png" alt="GERkubel">
-            <img width="2%" src="images/unitpics/GERleFH18_Truck.png" alt="GERleFH18_Truck">
-            <img width="2%" src="images/unitpics/GERleIG18.png" alt="GERleIG18">
-            <img width="2%" src="images/unitpics/GERlefH18_Stationary.png" alt="GERlefH18_Stationary">
-            <img width="2%" src="images/unitpics/germfp.png" alt="germfp">
-            <img width="2%" src="images/unitpics/JPNAPMineSign.png" alt="JPNAPMineSign">
-            <img width="2%" src="images/unitpics/JPNATMineSign.png" alt="JPNATMineSign">
-            <img width="2%" src="images/unitpics/JPNAbTei.png" alt="JPNAbTei">
-            <img width="2%" src="images/unitpics/JPNAssaultBoat.png" alt="JPNAssaultBoat">
-            <img width="2%" src="images/unitpics/JPNBarracks.png" alt="JPNBarracks">
-            <img width="2%" src="images/unitpics/JPNBoatyard.png" alt="JPNBoatyard">
-            <img width="2%" src="images/unitpics/JPNBusouDaihatsu.png" alt="JPNBusouDaihatsu">
-            <img width="2%" src="images/unitpics/JPNChiHa.png" alt="JPNChiHa">
-            <img width="2%" src="images/unitpics/JPNChiHa120mm.png" alt="JPNChiHa120mm">
-            <img width="2%" src="images/unitpics/JPNChiHe.png" alt="JPNChiHe">
-            <img width="2%" src="images/unitpics/JPNChiNu.png" alt="JPNChiNu">
-            <img width="2%" src="images/unitpics/JPNDaihatsu.png" alt="JPNDaihatsu">
-            <img width="2%" src="images/unitpics/JPNGunYard.png" alt="JPNGunYard">
-            <img width="2%" src="images/unitpics/JPNHQ.png" alt="JPNHQ">
-            <img width="2%" src="images/unitpics/JPNHQEngineer.png" alt="JPNHQEngineer">
-            <img width="2%" src="images/unitpics/JPNHaGo.png" alt="JPNHaGo">
-            <img width="2%" src="images/unitpics/JPNHoHa.png" alt="JPNHoHa">
-            <img width="2%" src="images/unitpics/JPNHoNiI.png" alt="JPNHoNiI">
-            <img width="2%" src="images/unitpics/JPNHoNiII.png" alt="JPNHoNiII">
-            <img width="2%" src="images/unitpics/JPNHoNiIII.png" alt="JPNHoNiIII">
-            <img width="2%" src="images/unitpics/JPNHoRo.png" alt="JPNHoRo">
-            <img width="2%" src="images/unitpics/JPNIsuzuTX40.png" alt="JPNIsuzuTX40">
-            <img width="2%" src="images/unitpics/JPNIsuzuType94_AA.png" alt="JPNIsuzuType94_AA">
-            <img width="2%" src="images/unitpics/JPNKaMi.png" alt="JPNKaMi">
-            <img width="2%" src="images/unitpics/JPNKaTsu.png" alt="JPNKaTsu">
-            <img width="2%" src="images/unitpics/JPNKi102.png" alt="JPNKi102">
-            <img width="2%" src="images/unitpics/JPNKi43.png" alt="JPNKi43">
-            <img width="2%" src="images/unitpics/JPNKi51.png" alt="JPNKi51">
-            <img width="2%" src="images/unitpics/JPNKi76.png" alt="JPNKi76">
-            <img width="2%" src="images/unitpics/JPNKi84.png" alt="JPNKi84">
-            <img width="2%" src="images/unitpics/JPNKneeMortar.png" alt="JPNKneeMortar">
-            <img width="2%" src="images/unitpics/JPNMortar.png" alt="JPNMortar">
-            <img width="2%" src="images/unitpics/JPNObserv.png" alt="JPNObserv">
-            <img width="2%" src="images/unitpics/JPNPontoonRaft.png" alt="JPNPontoonRaft">
-            <img width="2%" src="images/unitpics/JPNPontoonTruck.png" alt="JPNPontoonTruck">
-            <img width="2%" src="images/unitpics/JPNRadar.png" alt="JPNRadar">
-            <img width="2%" src="images/unitpics/JPNRiKi.png" alt="JPNRiKi">
-            <img width="2%" src="images/unitpics/JPNRifle.png" alt="JPNRifle">
-            <img width="2%" src="images/unitpics/JPNSeta.png" alt="JPNSeta">
-            <img width="2%" src="images/unitpics/JPNShinhotoChiHa.png" alt="JPNShinhotoChiHa">
-            <img width="2%" src="images/unitpics/JPNSniper.png" alt="JPNSniper">
-            <img width="2%" src="images/unitpics/JPNStorage.png" alt="JPNStorage">
-            <img width="2%" src="images/unitpics/JPNStorageTunnel.png" alt="JPNStorageTunnel">
-            <img width="2%" src="images/unitpics/JPNSupplyDepot.png" alt="JPNSupplyDepot">
-            <img width="2%" src="images/unitpics/JPNT14.png" alt="JPNT14">
-            <img width="2%" src="images/unitpics/JPNTankObstacle.png" alt="JPNTankObstacle">
-            <img width="2%" src="images/unitpics/JPNTankYard.png" alt="JPNTankYard">
-            <img width="2%" src="images/unitpics/JPNTeKe.png" alt="JPNTeKe">
-            <img width="2%" src="images/unitpics/JPNTeKe_HMG.png" alt="JPNTeKe_HMG">
-            <img width="2%" src="images/unitpics/JPNTent.png" alt="JPNTent">
-            <img width="2%" src="images/unitpics/JPNTokuDaihatsu.png" alt="JPNTokuDaihatsu">
-            <img width="2%" src="images/unitpics/JPNTruckSupplies.png" alt="JPNTruckSupplies">
-            <img width="2%" src="images/unitpics/JPNType100SMG.png" alt="JPNType100SMG">
-            <img width="2%" src="images/unitpics/JPNType1_47mm_Stationary.png" alt="JPNType1_47mm_Stationary">
-            <img width="2%" src="images/unitpics/JPNType1_47mm_Truck.png" alt="JPNType1_47mm_Truck">
-            <img width="2%" src="images/unitpics/JPNType3AT.png" alt="JPNType3AT">
-            <img width="2%" src="images/unitpics/JPNType4AT.png" alt="JPNType4AT">
-            <img width="2%" src="images/unitpics/JPNType4Mortar_Mobile.png" alt="JPNType4Mortar_Mobile">
-            <img width="2%" src="images/unitpics/JPNType4Mortar_stationary.png" alt="JPNType4Mortar_stationary">
-            <img width="2%" src="images/unitpics/JPNType5Nato.png" alt="JPNType5Nato">
-            <img width="2%" src="images/unitpics/JPNType90_75mm_Stationary.png" alt="JPNType90_75mm_Stationary">
-            <img width="2%" src="images/unitpics/JPNType90_75mm_Truck.png" alt="JPNType90_75mm_Truck">
-            <img width="2%" src="images/unitpics/JPNType91_105mm_Stationary.png" alt="JPNType91_105mm_Stationary">
-            <img width="2%" src="images/unitpics/JPNType91_105mm_Truck.png" alt="JPNType91_105mm_Truck">
-            <img width="2%" src="images/unitpics/JPNType92HMG.png" alt="JPNType92HMG">
-            <img width="2%" src="images/unitpics/JPNType92_10cm_stationary.png" alt="JPNType92_10cm_stationary">
-            <img width="2%" src="images/unitpics/JPNType92_10cm_truck.png" alt="JPNType92_10cm_truck">
-            <img width="2%" src="images/unitpics/JPNType98_20mm_Stationary.png" alt="JPNType98_20mm_Stationary">
-            <img width="2%" src="images/unitpics/JPNType98_20mm_Truck.png" alt="JPNType98_20mm_Truck">
-            <img width="2%" src="images/unitpics/JPNType99LMG.png" alt="JPNType99LMG">
-            <img width="2%" src="images/unitpics/JPNTypeNo1AuxSC.png" alt="JPNTypeNo1AuxSC">
-            <img width="2%" src="images/unitpics/JPNVehicleYard.png" alt="JPNVehicleYard">
-            <img width="2%" src="images/unitpics/JPNkurogane.png" alt="JPNkurogane">
-            <img width="2%" src="images/unitpics/ITAAB41.png" alt="ITAAB41">
-            <img width="2%" src="images/unitpics/ITAAPMineSign.png" alt="ITAAPMineSign">
-            <img width="2%" src="images/unitpics/ITAAS37.png" alt="ITAAS37">
-            <img width="2%" src="images/unitpics/ITAATMineSign.png" alt="ITAATMineSign">
-            <img width="2%" src="images/unitpics/ITAAlpiniMortar.png" alt="ITAAlpiniMortar">
-            <img width="2%" src="images/unitpics/ITAAlpiniObserv.png" alt="ITAAlpiniObserv">
-            <img width="2%" src="images/unitpics/ITAAlpinirifle.png" alt="ITAAlpinirifle">
-            <img width="2%" src="images/unitpics/ITAAssaultBoat.png" alt="ITAAssaultBoat">
-            <img width="2%" src="images/unitpics/ITAAutocannone100.png" alt="ITAAutocannone100">
-            <img width="2%" src="images/unitpics/ITAAutocannone75.png" alt="ITAAutocannone75">
-            <img width="2%" src="images/unitpics/ITAAutocannone90.png" alt="ITAAutocannone90">
-            <img width="2%" src="images/unitpics/ITABoatyard.png" alt="ITABoatyard">
-            <img width="2%" src="images/unitpics/ITABreda20_stationary.png" alt="ITABreda20_stationary">
-            <img width="2%" src="images/unitpics/ITABreda20_truck.png" alt="ITABreda20_truck">
-            <img width="2%" src="images/unitpics/ITABreda30.png" alt="ITABreda30">
-            <img width="2%" src="images/unitpics/ITABreda41.png" alt="ITABreda41">
-            <img width="2%" src="images/unitpics/ITABreda61.png" alt="ITABreda61">
-            <img width="2%" src="images/unitpics/ITACannone105_32_Stationary.png" alt="ITACannone105_32_Stationary">
-            <img width="2%" src="images/unitpics/ITACannone105_32_truck.png" alt="ITACannone105_32_truck">
-            <img width="2%" src="images/unitpics/ITACannone47_Stationary.png" alt="ITACannone47_Stationary">
-            <img width="2%" src="images/unitpics/ITACannone47_Truck.png" alt="ITACannone47_Truck">
-            <img width="2%" src="images/unitpics/ITACannone65.png" alt="ITACannone65">
-            <img width="2%" src="images/unitpics/ITACannone75_Stationary.png" alt="ITACannone75_Stationary">
-            <img width="2%" src="images/unitpics/ITACannone75_Truck.png" alt="ITACannone75_Truck">
-            <img width="2%" src="images/unitpics/ITAFiat626.png" alt="ITAFiat626">
-            <img width="2%" src="images/unitpics/ITAFiatCR42.png" alt="ITAFiatCR42">
-            <img width="2%" src="images/unitpics/ITAM1542.png" alt="ITAM1542">
-            <img width="2%" src="images/unitpics/ITAM37.png" alt="ITAM37">
-            <img width="2%" src="images/unitpics/ITAM38.png" alt="ITAM38">
-            <img width="2%" src="images/unitpics/ITAMC200.png" alt="ITAMC200">
-            <img width="2%" src="images/unitpics/ITAMG.png" alt="ITAMG">
-            <img width="2%" src="images/unitpics/ITAML.png" alt="ITAML">
-            <img width="2%" src="images/unitpics/ITAMortar.png" alt="ITAMortar">
-            <img width="2%" src="images/unitpics/ITAObice100_Stationary.png" alt="ITAObice100_Stationary">
-            <img width="2%" src="images/unitpics/ITAObice100_truck.png" alt="ITAObice100_truck">
-            <img width="2%" src="images/unitpics/ITAP40.png" alt="ITAP40">
-            <img width="2%" src="images/unitpics/ITAPanzerFaust.png" alt="ITAPanzerFaust">
-            <img width="2%" src="images/unitpics/ITAPontoonRaft.png" alt="ITAPontoonRaft">
-            <img width="2%" src="images/unitpics/ITAReggiane2005.png" alt="ITAReggiane2005">
-            <img width="2%" src="images/unitpics/ITARifle.png" alt="ITARifle">
-            <img width="2%" src="images/unitpics/ITARo37.png" alt="ITARo37">
-            <img width="2%" src="images/unitpics/ITASPADovunque.png" alt="ITASPADovunque">
-            <img width="2%" src="images/unitpics/ITASemovente105.png" alt="ITASemovente105">
-            <img width="2%" src="images/unitpics/ITASemovente47.png" alt="ITASemovente47">
-            <img width="2%" src="images/unitpics/ITASemovente75_18.png" alt="ITASemovente75_18">
-            <img width="2%" src="images/unitpics/ITASemovente75_46.png" alt="ITASemovente75_46">
-            <img width="2%" src="images/unitpics/ITASemovente90.png" alt="ITASemovente90">
-            <img width="2%" src="images/unitpics/ITASniper.png" alt="ITASniper">
-            <img width="2%" src="images/unitpics/ITASoloAT.png" alt="ITASoloAT">
-            <img width="2%" src="images/unitpics/ITAStorage.png" alt="ITAStorage">
-            <img width="2%" src="images/unitpics/ITAStorageSupply.png" alt="ITAStorageSupply">
-            <img width="2%" src="images/unitpics/ITASupplyDepot.png" alt="ITASupplyDepot">
-            <img width="2%" src="images/unitpics/ITATankObstacle.png" alt="ITATankObstacle">
-            <img width="2%" src="images/unitpics/ITATruckSupplies.png" alt="ITATruckSupplies">
-            <img width="2%" src="images/unitpics/ITAVedetta.png" alt="ITAVedetta">
-            <img width="2%" src="images/unitpics/ITAbersaglieriM38.png" alt="ITAbersaglieriM38">
-            <img width="2%" src="images/unitpics/ITAfiat508cm.png" alt="ITAfiat508cm">
-            <img width="2%" src="images/unitpics/ITAhqengineer.png" alt="ITAhqengineer">
-            <img width="2%" src="images/unitpics/itaalpini.png" alt="itaalpini">
-            <img width="2%" src="images/unitpics/itaalpinifnab43.png" alt="itaalpinifnab43">
-            <img width="2%" src="images/unitpics/itabarracks.png" alt="itabarracks">
-            <img width="2%" src="images/unitpics/itabersaglieri.png" alt="itabersaglieri">
-            <img width="2%" src="images/unitpics/itabersaglieririfle.png" alt="itabersaglieririfle">
-            <img width="2%" src="images/unitpics/itagabbiano.png" alt="itagabbiano">
-            <img width="2%" src="images/unitpics/itagunyard.png" alt="itagunyard">
-            <img width="2%" src="images/unitpics/itahq.png" alt="itahq">
-            <img width="2%" src="images/unitpics/ital6_40lf.png" alt="ital6_40lf">
-            <img width="2%" src="images/unitpics/itamas.png" alt="itamas">
-            <img width="2%" src="images/unitpics/itamc202.png" alt="itamc202">
-            <img width="2%" src="images/unitpics/itamc205.png" alt="itamc205">
-            <img width="2%" src="images/unitpics/itams.png" alt="itams">
-            <img width="2%" src="images/unitpics/itamz.png" alt="itamz">
-            <img width="2%" src="images/unitpics/itaobserv.png" alt="itaobserv">
-            <img width="2%" src="images/unitpics/itapontoontruck.png" alt="itapontoontruck">
-            <img width="2%" src="images/unitpics/itaradar.png" alt="itaradar">
-            <img width="2%" src="images/unitpics/itatankyard.png" alt="itatankyard">
-            <img width="2%" src="images/unitpics/itavehicleyard.png" alt="itavehicleyard">
-            <img width="2%" src="images/unitpics/HUN31M_105mm_Stationary.png" alt="HUN31M_105mm_Stationary">
-            <img width="2%" src="images/unitpics/HUN31M_105mm_Truck.png" alt="HUN31M_105mm_Truck">
-            <img width="2%" src="images/unitpics/HUN36MBofors_Stationary.png" alt="HUN36MBofors_Stationary">
-            <img width="2%" src="images/unitpics/HUN36MBofors_Truck.png" alt="HUN36MBofors_Truck">
-            <img width="2%" src="images/unitpics/HUN38MBotond.png" alt="HUN38MBotond">
-            <img width="2%" src="images/unitpics/HUN39MCsaba.png" alt="HUN39MCsaba">
-            <img width="2%" src="images/unitpics/HUN40MNimrod.png" alt="HUN40MNimrod">
-            <img width="2%" src="images/unitpics/HUN40MTuran.png" alt="HUN40MTuran">
-            <img width="2%" src="images/unitpics/HUN41MTuranII.png" alt="HUN41MTuranII">
-            <img width="2%" src="images/unitpics/HUN43MLehel.png" alt="HUN43MLehel">
-            <img width="2%" src="images/unitpics/HUN43MTuranIII.png" alt="HUN43MTuranIII">
-            <img width="2%" src="images/unitpics/HUN43MZrynyiII.png" alt="HUN43MZrynyiII">
-            <img width="2%" src="images/unitpics/HUN44MBuzoganyveto_Stationary.png" alt="HUN44MBuzoganyveto_Stationary">
-            <img width="2%" src="images/unitpics/HUN44MBuzoganyveto_Truck.png" alt="HUN44MBuzoganyveto_Truck">
-            <img width="2%" src="images/unitpics/HUN44MTAS.png" alt="HUN44MTAS">
-            <img width="2%" src="images/unitpics/HUNAFP.png" alt="HUNAFP">
-            <img width="2%" src="images/unitpics/HUNAPMineSign.png" alt="HUNAPMineSign">
-            <img width="2%" src="images/unitpics/HUNATMineSign.png" alt="HUNATMineSign">
-            <img width="2%" src="images/unitpics/HUNAssaultBoat.png" alt="HUNAssaultBoat">
-            <img width="2%" src="images/unitpics/HUNBarracks.png" alt="HUNBarracks">
-            <img width="2%" src="images/unitpics/HUNBergeHetzer.png" alt="HUNBergeHetzer">
-            <img width="2%" src="images/unitpics/HUNBf109.png" alt="HUNBf109">
-            <img width="2%" src="images/unitpics/HUNBoatyard.png" alt="HUNBoatyard">
-            <img width="2%" src="images/unitpics/HUNEngineer.png" alt="HUNEngineer">
-            <img width="2%" src="images/unitpics/HUNFortifiedStorage.png" alt="HUNFortifiedStorage">
-            <img width="2%" src="images/unitpics/HUNGunYard.png" alt="HUNGunYard">
-            <img width="2%" src="images/unitpics/HUNGunboat.png" alt="HUNGunboat">
-            <img width="2%" src="images/unitpics/HUNHMG.png" alt="HUNHMG">
-            <img width="2%" src="images/unitpics/HUNHQ.png" alt="HUNHQ">
-            <img width="2%" src="images/unitpics/HUNHetzer.png" alt="HUNHetzer">
-            <img width="2%" src="images/unitpics/HUNLMG.png" alt="HUNLMG">
-            <img width="2%" src="images/unitpics/HUNLaBo41.png" alt="HUNLaBo41">
-            <img width="2%" src="images/unitpics/HUNLeFH18_Stationary.png" alt="HUNLeFH18_Stationary">
-            <img width="2%" src="images/unitpics/HUNLeFH18_Truck.png" alt="HUNLeFH18_Truck">
-            <img width="2%" src="images/unitpics/HUNMe210.png" alt="HUNMe210">
-            <img width="2%" src="images/unitpics/HUNMe210_Attack.png" alt="HUNMe210_Attack">
-            <img width="2%" src="images/unitpics/HUNMe210_bomber.png" alt="HUNMe210_bomber">
-            <img width="2%" src="images/unitpics/HUNMortar.png" alt="HUNMortar">
-            <img width="2%" src="images/unitpics/HUNObserv.png" alt="HUNObserv">
-            <img width="2%" src="images/unitpics/HUNPAM21.png" alt="HUNPAM21">
-            <img width="2%" src="images/unitpics/HUNPM.png" alt="HUNPM">
-            <img width="2%" src="images/unitpics/HUNPaK40_Stationary.png" alt="HUNPaK40_Stationary">
-            <img width="2%" src="images/unitpics/HUNPaK40_Truck.png" alt="HUNPaK40_Truck">
-            <img width="2%" src="images/unitpics/HUNPanzerfaust.png" alt="HUNPanzerfaust">
-            <img width="2%" src="images/unitpics/HUNPanzerschrek.png" alt="HUNPanzerschrek">
-            <img width="2%" src="images/unitpics/HUNPontoonRaft.png" alt="HUNPontoonRaft">
-            <img width="2%" src="images/unitpics/HUNPontoonTruck.png" alt="HUNPontoonTruck">
-            <img width="2%" src="images/unitpics/HUNRadar.png" alt="HUNRadar">
-            <img width="2%" src="images/unitpics/HUNRifle.png" alt="HUNRifle">
-            <img width="2%" src="images/unitpics/HUNSMG.png" alt="HUNSMG">
-            <img width="2%" src="images/unitpics/HUNSandbagMG.png" alt="HUNSandbagMG">
-            <img width="2%" src="images/unitpics/HUNSchSturmboot.png" alt="HUNSchSturmboot">
-            <img width="2%" src="images/unitpics/HUNSniper.png" alt="HUNSniper">
-            <img width="2%" src="images/unitpics/HUNStorage.png" alt="HUNStorage">
-            <img width="2%" src="images/unitpics/HUNSupplyDepot.png" alt="HUNSupplyDepot">
-            <img width="2%" src="images/unitpics/HUNTankObstacle.png" alt="HUNTankObstacle">
-            <img width="2%" src="images/unitpics/HUNTankYard.png" alt="HUNTankYard">
-            <img width="2%" src="images/unitpics/HUNToldiII.png" alt="HUNToldiII">
-            <img width="2%" src="images/unitpics/HUNToldiIIA.png" alt="HUNToldiIIA">
-            <img width="2%" src="images/unitpics/HUNTruckSupplies.png" alt="HUNTruckSupplies">
-            <img width="2%" src="images/unitpics/HUNVehicleYard.png" alt="HUNVehicleYard">
-            <img width="2%" src="images/unitpics/HUNWM21.png" alt="HUNWM21">
-            <img width="2%" src="images/unitpics/HUNfiat508cm.png" alt="HUNfiat508cm">
-            <img width="2%" src="images/unitpics/SWEAPMineSign.png" alt="SWEAPMineSign">
-            <img width="2%" src="images/unitpics/SWEATMineSign.png" alt="SWEATMineSign">
-            <img width="2%" src="images/unitpics/SWEAgM42.png" alt="SWEAgM42">
-            <img width="2%" src="images/unitpics/SWEArholma.png" alt="SWEArholma">
-            <img width="2%" src="images/unitpics/SWEAssaultBoat.png" alt="SWEAssaultBoat">
-            <img width="2%" src="images/unitpics/SWEB17A.png" alt="SWEB17A">
-            <img width="2%" src="images/unitpics/SWEB18.png" alt="SWEB18">
-            <img width="2%" src="images/unitpics/SWEBBVM42.png" alt="SWEBBVM42">
-            <img width="2%" src="images/unitpics/SWEBarracks.png" alt="SWEBarracks">
-            <img width="2%" src="images/unitpics/SWEBoatyard.png" alt="SWEBoatyard">
-            <img width="2%" src="images/unitpics/SWEBoforsM36_Stationary.png" alt="SWEBoforsM36_Stationary">
-            <img width="2%" src="images/unitpics/SWEBoforsM36_Truck.png" alt="SWEBoforsM36_Truck">
-            <img width="2%" src="images/unitpics/SWEEldsprutaM41.png" alt="SWEEldsprutaM41">
-            <img width="2%" src="images/unitpics/SWEEngineer.png" alt="SWEEngineer">
-            <img width="2%" src="images/unitpics/SWEGunYard.png" alt="SWEGunYard">
-            <img width="2%" src="images/unitpics/SWEHQ.png" alt="SWEHQ">
-            <img width="2%" src="images/unitpics/SWEHQEngineer.png" alt="SWEHQEngineer">
-            <img width="2%" src="images/unitpics/SWEHaubitsM06_Stationary.png" alt="SWEHaubitsM06_Stationary">
-            <img width="2%" src="images/unitpics/SWEHaubitsM06_Truck.png" alt="SWEHaubitsM06_Truck">
-            <img width="2%" src="images/unitpics/SWEHaubitsM39_Stationary.png" alt="SWEHaubitsM39_Stationary">
-            <img width="2%" src="images/unitpics/SWEHaubitsM39_Truck.png" alt="SWEHaubitsM39_Truck">
-            <img width="2%" src="images/unitpics/SWEJ21A.png" alt="SWEJ21A">
-            <img width="2%" src="images/unitpics/SWEJ22.png" alt="SWEJ22">
-            <img width="2%" src="images/unitpics/SWEKPistM3739.png" alt="SWEKPistM3739">
-            <img width="2%" src="images/unitpics/SWEKanon105_42_Stationary.png" alt="SWEKanon105_42_Stationary">
-            <img width="2%" src="images/unitpics/SWEKanon105_42_Truck.png" alt="SWEKanon105_42_Truck">
-            <img width="2%" src="images/unitpics/SWEKanonM02_33_Stationary.png" alt="SWEKanonM02_33_Stationary">
-            <img width="2%" src="images/unitpics/SWEKanonM02_33_Truck.png" alt="SWEKanonM02_33_Truck">
-            <img width="2%" src="images/unitpics/SWEKgM37.png" alt="SWEKgM37">
-            <img width="2%" src="images/unitpics/SWELCT.png" alt="SWELCT">
-            <img width="2%" src="images/unitpics/SWELCVP.png" alt="SWELCVP">
-            <img width="2%" src="images/unitpics/SWEMG.png" alt="SWEMG">
-            <img width="2%" src="images/unitpics/SWEMortar.png" alt="SWEMortar">
-            <img width="2%" src="images/unitpics/SWEObserv.png" alt="SWEObserv">
-            <img width="2%" src="images/unitpics/SWEPBilM31.png" alt="SWEPBilM31">
-            <img width="2%" src="images/unitpics/SWEPBilM31F.png" alt="SWEPBilM31F">
-            <img width="2%" src="images/unitpics/SWEPBilM40.png" alt="SWEPBilM40">
-            <img width="2%" src="images/unitpics/SWEPSkottM45.png" alt="SWEPSkottM45">
-            <img width="2%" src="images/unitpics/SWEPartisan.png" alt="SWEPartisan">
-            <img width="2%" src="images/unitpics/SWEPartisanBase.png" alt="SWEPartisanBase">
-            <img width="2%" src="images/unitpics/SWEPontoonRaft.png" alt="SWEPontoonRaft">
-            <img width="2%" src="images/unitpics/SWEPontoonTruck.png" alt="SWEPontoonTruck">
-            <img width="2%" src="images/unitpics/SWEPvGM42.png" alt="SWEPvGM42">
-            <img width="2%" src="images/unitpics/SWEPvKanM43_Stationary.png" alt="SWEPvKanM43_Stationary">
-            <img width="2%" src="images/unitpics/SWEPvKanM43_Truck.png" alt="SWEPvKanM43_Truck">
-            <img width="2%" src="images/unitpics/SWEPvLvM40_AA.png" alt="SWEPvLvM40_AA">
-            <img width="2%" src="images/unitpics/SWEPvLvM40_AT.png" alt="SWEPvLvM40_AT">
-            <img width="2%" src="images/unitpics/SWERadar.png" alt="SWERadar">
-            <img width="2%" src="images/unitpics/SWERifle.png" alt="SWERifle">
-            <img width="2%" src="images/unitpics/SWES14B.png" alt="SWES14B">
-            <img width="2%" src="images/unitpics/SWESAVM43.png" alt="SWESAVM43">
-            <img width="2%" src="images/unitpics/SWESandbagMG.png" alt="SWESandbagMG">
-            <img width="2%" src="images/unitpics/SWEScaniaVabisF11.png" alt="SWEScaniaVabisF11">
-            <img width="2%" src="images/unitpics/SWEScaniaVabisF11_Barracks.png" alt="SWEScaniaVabisF11_Barracks">
-            <img width="2%" src="images/unitpics/SWESniper.png" alt="SWESniper">
-            <img width="2%" src="images/unitpics/SWEStorage.png" alt="SWEStorage">
-            <img width="2%" src="images/unitpics/SWEStrvM37.png" alt="SWEStrvM37">
-            <img width="2%" src="images/unitpics/SWEStrvM40SII.png" alt="SWEStrvM40SII">
-            <img width="2%" src="images/unitpics/SWEStrvM41.png" alt="SWEStrvM41">
-            <img width="2%" src="images/unitpics/SWEStrvM42.png" alt="SWEStrvM42">
-            <img width="2%" src="images/unitpics/SWESupplyDepot.png" alt="SWESupplyDepot">
-            <img width="2%" src="images/unitpics/SWET21.png" alt="SWET21">
-            <img width="2%" src="images/unitpics/SWETGBilM42.png" alt="SWETGBilM42">
-            <img width="2%" src="images/unitpics/SWETankObstacle.png" alt="SWETankObstacle">
-            <img width="2%" src="images/unitpics/SWETankYard.png" alt="SWETankYard">
-            <img width="2%" src="images/unitpics/SWETruckSupplies.png" alt="SWETruckSupplies">
-            <img width="2%" src="images/unitpics/SWEVedettbat.png" alt="SWEVedettbat">
-            <img width="2%" src="images/unitpics/SWEVehicleYard.png" alt="SWEVehicleYard">
-            <img width="2%" src="images/unitpics/SWEVolvoTPV.png" alt="SWEVolvoTPV">
-            <img width="2%" src="images/unitpics/SWEVolvoTVC.png" alt="SWEVolvoTVC">
-        </center>
-        </section>
-    </article>
-</div>
-
-
-<footer class="site-footer">
-    <div class="container">
-        <nav>
-            <a href="https://spring1944.github.io">Spring: 1944 Team</a> &middot;
-            <a href="./" class="home">Home</a>
-            <a href="./media">Media</a>
-            <a href="./play">Play</a>
-            <a href="./learn">Learn</a>
-            <a href="./maps">Maps</a>
-            <a href="./about">Contact/About</a>
-        </nav>
-
-        <nav class="social">
-
-            <a href="https://github.com/spring1944" title="Follow on Github" target="_blank"><i class="icon icon-github black"></i></a>
-
-            <a href="./index.xml" title="RSS Feed">
-                <i class="icon icon-rss black"></i>
-            </a>
-        </nav>
+<!-- Navigation bar -->
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <img src="./images/S44-logo-vector.png" alt="" height="40">
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="s44">Home</a></li>
+        <li><a href="media" class="s44">Media</a></li>
+        <li><a href="play" class="s44">Play</a></li>
+        <li><a href="learn" class="s44">Learn</a></li>
+        <li><a href="maps" class="s44">Maps</a></li>
+        <li><a href="about" class="s44">Contact/About</a></li>
+      </ul>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="https://github.com/spring1944/spring1944" class="s44">Free, Open Source WWII RTS</a></li>
+      </ul>
     </div>
-	<div class="container">
-		<div class="text-center small"> All content CC-BY-NC Spring: 1944 Team </div>
-	</div>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="container-fluid blog-cover">
+  <h1><img height="128" src="./images/S44-logo-vector.png" alt=""></h1>
+  <h3>Free, Open Source WWII RTS</h3>
+  <a href="https://github.com/spring1944" title="Follow on Github" target="_blank">
+    <i class="icon icon-github"></i>
+  </a>
+  <a href="https://riot.im/app/#/room/#s44:matrix.org" title="RSS Feed">
+    <i class="icon icon-rss"></i>
+  </a>
+</div>
+
+<!-- Game description -->
+<div class="container-fluid section">
+  <div class="row">
+    <div class="col-xs-7" style="padding-top:3%">
+      <img src="images/MassiveBattle.png" alt="" width="100%">
+    </div>
+    <div class="col-xs-5">
+      <h2 class="title">A WWII RTS game</h2>
+      <p>
+        Spring: 1944 is an open source Real Time Strategy game set in the final
+        year of WWII. Think of it like a cross between Company of Heroes and
+        Supreme Commander, as designed by someone who played neither.
+      </p>
+      <p class="quote">
+        Written By S44 Team &mdash; September 9, 2014
+      </p>
+      <p>
+        Originally begun in 2002 as a single-unit modification for Total
+        Annihilation called Axis &amp; Allies TA, the game has since grown well
+        beyond its original plans. The mod was completed in August of 2005, with
+        the main dev at that point (M_26_7 / SpikedHelmet) deciding it was time
+        to move on. Not long after, an early version of the Spring engine was
+        released — an engine designed to run content from Total Annihilation,
+        and Axis &amp; Allies TA was soon ported by a fan, and then by FLOZi in
+        November of 2005. The port was then released in December 2006 with a few
+        bits of new content (mostly infantry models) and updated game play
+        elements.
+      </p>
+      <p>
+        After that release, AATA was reborn as Spring: 1944 – a complete
+        re-build from scratch, using all-new content and a new design
+        philosophy. While our release schedule has been a tad on the erratic
+        side, work has been progressing continuously ever since 2006, with
+        published builds going out approximately once or twice a year. The game
+        reached a nearly completed state between 2010-2011, and most of the work
+        since that point has focused on balance, a handful of new gameplay
+        mechanics, cleaning up the game’s internals and smoothing out the
+        experience for new players.
+      </p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-5">
+      <h2 class="title">Insane battles</h2>
+      <p>
+        Fight massive battles on land, sea and air with hundreds of different
+        units and buildings, with one of the
+        <a href="https://gitlab.com/Spring1944/spring1944/wikis/factions/main">
+          8 already available factions
+        </a>. The unique features of each faction, the huge number of units
+        potentially involved, and the wide variety of available combat theaters,
+        make each battle different.
+      </p>
+      <p>
+        The thing may quickly change on the battlefield!
+      </p>
+    </div>
+    <div class="col-xs-7" style="padding-top:3%">
+      <img src="images/Snapshot_Land.png" alt="" width="33%">
+      <img src="images/Snapshot_Air.png" alt="" width="33%">
+      <img src="images/Snapshot_Water.png" alt="" width="33%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6" style="padding-top:1%">
+      <div class="slider responsive">
+				<div class="left image">
+					<img src="images/gfx_old.png"/>
+				</div>
+				<div class="right image">
+					<img src="images/gfx_new.png"/>
+				</div>
+			</div>
+    </div>
+    <div class="col-xs-6">
+      <h2 class="title">Spring as you've never seen it before</h2>
+      <p>
+        Spring:1944 is based on the excellent <a href="https://springrts.com/">
+        Spring RTS engine</a>. However, the LUA API has been applied to boost it
+        with several graphic improvements, namely:
+      </p>
+      <ul>
+        <li>Screen Space Ambient Occlusion</li>
+        <li>Cook-Torrance microfacets shading</li>
+        <li>Gamma correction</li>
+        <li>Tone Mapping</li>
+        <li>Vignetting</li>
+        <li>Color aberration</li>
+      </ul>
+      <p>
+        Such boosted graphics stack may help you to experience a better
+        inmersion on the universe of the World War II, the biggest war scourged
+        human-beings.
+      </p>
+      <p>
+        You can learn more about enabling the graphic improvements
+        <a href="https://gitlab.com/Spring1944/spring1944/wikis/gfx/main">on the
+        wiki</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="container-fluid site-footer">
+    <a href="https://spring1944.github.io">Spring: 1944 Team</a> &middot;
+    <a href="#" class="home">Home</a>
+    <a href="media">Media</a>
+    <a href="play">Play</a>
+    <a href="learn">Learn</a>
+    <a href="maps">Maps</a>
+    <a href="about">Contact/About</a>
+
+  <div class="social">
+    <a href="https://github.com/spring1944" title="Follow on Github" target="_blank"><i class="icon icon-github black"></i></a>
+    <a href="https://riot.im/app/#/room/#s44:matrix.org" title="RSS Feed">
+      <i class="icon icon-rss black"></i>
+    </a>
+  </div>
+  <div class="text-center small"> All content CC-BY-NC Spring: 1944 Team </div>
+</div>
 </footer>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/github-repo-widget/e23d85ab8f/jquery.githubRepoWidget.min.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
 
 
-
-
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68138628-1', 'auto');
-  ga('send', 'pageview');
-
+<script type="text/javascript">
+  $('.slider').slider();
 </script>
-
-
-
-
-
-
-
-
 
 </body>
 </html>
