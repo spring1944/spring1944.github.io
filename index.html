@@ -24,10 +24,9 @@
 </head>
 <body>
 
-<!-- Video fixed background -->
-<video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
-  <source src="./videos/s44_bg.webm" type="video/webm" />
-</video>
+<!-- Image/video fixed background, controlled by main.js. -->
+<div id="video_background">
+</div>
 
 <!-- Navigation bar -->
 <div class="navbar navbar-inverse">
@@ -190,6 +189,9 @@
 <script type="text/javascript">
   $('.slider').slider();
 </script>
+
+<script src="js/detectmobilebrowser.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
