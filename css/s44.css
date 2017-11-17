@@ -99,9 +99,10 @@ video {
   align-items: center;
 }
 
-#CollapseXS.in,
-#CollapseXS.collapsing {
-    display: block!important;
+@media only screen and (max-width: 768px) {
+    .section h2 {
+        font-size: 20px;
+    }
 }
 
 .site-footer {
