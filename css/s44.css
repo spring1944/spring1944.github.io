@@ -100,7 +100,7 @@ video {
 }
 
 @media only screen and (max-width: 768px) {
-    .section h2 {
+    .title {
         font-size: 20px;
     }
 }
