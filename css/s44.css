@@ -99,6 +99,11 @@ video {
   align-items: center;
 }
 
+#CollapseXS.in,
+#CollapseXS.collapsing {
+    display: block!important;
+}
+
 .site-footer {
   text-align: center;
   padding: 5em 0;
