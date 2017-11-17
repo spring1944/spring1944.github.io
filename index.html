@@ -28,8 +28,8 @@
 <div id="video_background">
 </div>
 
-<!-- Navigation bar -->
-<div class="navbar navbar-inverse">
+<!-- Navigation bar, hidden for extra-small devices -->
+<div class="navbar navbar-inverse visible-lg visible-md visible-sm hidden-xs">
   <div class="navbar-inner">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -44,7 +44,8 @@
         <li><a href="https://gitlab.com/Spring1944/spring1944/wikis/tutorial" class="s44">Learn</a></li>
         <li><a href="https://gitlab.com/Spring1944/spring1944/wikis/maps" class="s44">Maps</a></li>
       </ul>
-      <ul class="nav navbar-nav pull-right">
+      <!-- Hide the right msg in small-devices to avoid nthe line break -->
+      <ul class="nav navbar-nav pull-right visible-lg visible-md hidden-sm hidden-xs">
         <li><a href="https://github.com/spring1944/spring1944" class="s44">Free, Open Source WWII RTS</a></li>
       </ul>
     </div>
@@ -54,7 +55,12 @@
 <!-- Header -->
 <div class="container-fluid blog-cover">
   <h1><img height="128" src="./images/S44-logo-vector.png" alt=""></h1>
-  <h3>Free, Open Source WWII RTS</h3>
+  <h3 class="visible-lg visible-md visible-sm hidden-xs">
+    Free, Open Source WWII RTS
+  </h3>
+  <h3 class="hidden-lg hidden-md hidden-sm visible-xs">
+    Free WWII RTS
+  </h3>
   <a href="https://github.com/spring1944" title="Follow on Github" target="_blank">
     <i class="icon icon-github"></i>
   </a>
