@@ -1,3 +1,5 @@
+@import "font.css";
+
 body {
   background-color: black;
 }
@@ -218,4 +220,20 @@ video {
   height: auto;
   width: 100%;
   padding: 3%;
+}
+
+.str_brand {
+  margin:0;
+}
+
+.motto {
+  color:white; 
+  text-align: center; 
+  margin: 40px;
+}
+
+.motto h3 {
+  font-family: 'UniqueRegular';
+  font-weight: normal;
+  font-style: normal; 
 }
