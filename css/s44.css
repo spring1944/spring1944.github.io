@@ -201,3 +201,21 @@ video {
 .img-content {
   width: 800px;
 }
+
+/* Rules for the whole page about the images */
+
+.right, .right img {
+  height: 100%!important;
+}
+
+.left, .left img {
+  height: 100%!important;
+}
+
+/* Rules for the different rows in the page : padding + align center */
+
+.row {
+  height: auto;
+  width: 100%;
+  padding: 3%;
+}
