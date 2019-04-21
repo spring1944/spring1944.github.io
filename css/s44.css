@@ -1,3 +1,5 @@
+@import "font.css";
+
 body {
   background-color: black;
 }
@@ -98,8 +100,8 @@ video {
 .section {
   text-align: left;
   background-color: white;
-  margin-bottom: 20%;
   z-index: 10;
+  padding-bottom: 10px;
 }
 
 .section .quote {
@@ -118,46 +120,56 @@ video {
     }
 }
 
+/* FOOTER PART*/
 .site-footer {
   text-align: center;
   padding: 5em 0;
-  margin: 640px 0 0 0;
+  margin: 0;
   background: white;
   color: #aaa;
-  font-size: 0.8em; }
-  .site-footer a {
-    color: #777;
-    border: 0;
-    margin: 0 0.5em; }
-    .site-footer a:hover {
-      color: #222; }
-  .site-footer p {
-    color: #999; }
-    .site-footer p a {
-      margin: 0;
-      color: #999; }
-  .site-footer nav {
-    display: inline-block; }
-  .site-footer .social {
-    float: right; }
-    .site-footer .social a {
-      color: #000;
-      border: 0;
-      width: 36px;
-      height: 36px;
-      border: 2px solid black;
-      display: inline-block;
-      padding: 10px 0;
-      border-radius: 42px;
-      margin: 0 1em 0em 0;
-      transition: 0.2s all ease;
-      line-height: 0;
-      text-align: center;
-      opacity: 0.3; }
-      .site-footer .social a:hover {
-        opacity: 0.9; }
+  font-size: 0.8em; 
+  border-top-width: 2px;
+  border-top-style: ridge;
+}
+.site-footer a {
+  color: #777;
+  border: 0;
+  margin: 0 0.5em; }
+.site-footer a:hover {
+  color: #222; }
+.site-footer p {
+  color: #999; 
+}
+.site-footer p a {
+  margin: 0;
+  color: #999; 
+}
+.site-footer nav {
+  display: inline-block; 
+}
+.site-footer .social {
+  float: right; 
+}
+.site-footer .social a {
+  color: #000;
+  border: 0;
+  width: 36px;
+  height: 36px;
+  border: 2px solid black;
+  display: inline-block;
+  padding: 10px 0;
+  border-radius: 42px;
+  margin: 0 1em 0em 0;  
+  transition: 0.2s all ease;
+  line-height: 0;
+  text-align: center;
+  opacity: 0.3; 
+}
+.site-footer .social a:hover {
+  opacity: 0.9; 
+}
 
-
+/* ICON PART */
 .icon {
   display: inline-block;
   width: 12px;
@@ -179,7 +191,49 @@ video {
 }
 
 .icon-rss.black {
-  background-position: 1px -11px; }
+  background-position: 1px -11px; 
+}
 
 .icon-github.black {
-  background-position: 0px -14px; }
+  background-position: 0px -14px; 
+}
+
+/* Fix Size of the image */
+
+.img-content {
+  width: 800px;
+}
+
+/* Rules for the whole page about the images */
+
+.right, .right img {
+  height: 100%!important;
+}
+
+.left, .left img {
+  height: 100%!important;
+}
+
+/* Rules for the different rows in the page : padding + align center */
+
+.row {
+  height: auto;
+  width: 100%;
+  padding: 3%;
+}
+
+.str_brand {
+  margin:0;
+}
+
+.motto {
+  color:white; 
+  text-align: center; 
+  margin: 40px;
+}
+
+.motto h3 {
+  font-family: 'UniqueRegular';
+  font-weight: normal;
+  font-style: normal; 
+}
