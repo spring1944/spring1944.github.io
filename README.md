@@ -40,8 +40,8 @@ Some todo easy things:
   - Icons: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
   - Fonts: SIL OFL 1.1 (https://scripts.sil.org/OFL)
   - Code: MIT (https://opensource.org/licenses/MIT)
- - Bootstrap : MIT
- - IMG Slider : MIT
- - JQuery : MIT
+- Bootstrap : MIT
+- IMG Slider : MIT
+- JQuery : MIT
 - VideoJS : Apache License Version 2.0
 - lightgallery : Apache License Version 2.0
