@@ -29,7 +29,19 @@ Some todo easy things:
 - Extend website : more contents, link to Github, wiki...
 - Suggest some look, some icon themes... We will review and add it if we agree ;-)
 
-## LICENCE 
+## LICENSE of the website
 
 - GNU GPLv3 Licence for code
 - CreativeCommon CC-BY-NC-SA for content.
+
+## Third Party licenses
+
+- FontAwesome:
+  - Icons: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+  - Fonts: SIL OFL 1.1 (https://scripts.sil.org/OFL)
+  - Code: MIT (https://opensource.org/licenses/MIT)
+ - Bootstrap : MIT
+ - IMG Slider : MIT
+ - JQuery : MIT
+- VideoJS : Apache License Version 2.0
+- lightgallery : Apache License Version 2.0
