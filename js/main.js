@@ -8,14 +8,14 @@ $( document ).ready(function() {
         // Mobile platform, try to reduce the page size using a static image
         img = Math.floor((Math.random() * N_BACKGROUND_IMAGES) + 1);
         $("#video_background").html(
-            "<img src='videos/" + img + ".png' width='100%' />"
+            "<img src='/videos/" + img + ".png' width='100%' />"
         );
     }
     else {
         // Desktop, download the background video
         $("#video_background").html("                                             \
 <video preload='auto' autoplay='true' loop='loop' muted volume='0' width='100%'>  \
-    <source src='./videos/s44_bg.webm' type='video/webm' />                       \
+    <source src='/videos/s44_bg.webm' type='video/webm' />                       \
 </video>                                                                          \
         ");
     }

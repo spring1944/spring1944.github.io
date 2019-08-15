@@ -120,7 +120,7 @@ video {
     }
 }
 
-/* FOOTER PART*/
+/* FOOTER PART */
 .site-footer {
   text-align: center;
   padding: 5em 0;
@@ -176,6 +176,9 @@ video {
   height: 12px;
   vertical-align: middle;
   background-repeat: no-repeat;
+}
+.icon:hover {
+  color: black;
 }
 .icon-github {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABAAgMAAAAG4J09AAAACVBMVEUAAGcXFRb///8ObZ8rAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeBhQXDQbxf4waAAAAx0lEQVQoz52PMQ7EIAwEF6Q06flEXsEV11Pg/6Ar7xWUyK88r510uSYWEiO8Gi0AoAqfQ3XxzmozDHbCjE3s1OeMMLQvw3FMA1dMHAHrBtxl1qcQHuVhFzOzZiZ8FzcL+0dHZuk8lXUHcvS24Lr+egyEbGfG9eqHT8DEnxGJu4h03klsqsFGaLGJnficEYa2blhLM3BFQwnoN+Ausz6F8AgPu5iZNRPh3bnp2F5SE0unJqxbkaK3Bfv111IRso0Z14sfPgH28ANyGGzxyfqgrwAAAABJRU5ErkJggg==);
@@ -237,3 +240,12 @@ video {
   font-weight: normal;
   font-style: normal; 
 }
+
+.center {
+  height: auto; 
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+

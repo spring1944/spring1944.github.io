@@ -7,13 +7,18 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/flat-ui.min.css">
   <link rel="stylesheet" href="css/imgslider.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/s44.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/imgslider.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
 
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="./images/S44-logo-vector.png"/>
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/images/S44-logo-vector.png"/>
   <link href="https://spring1944.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Spring:1944" />
   <meta name="title" content="https://spring1944.github.io">
   <link rel="canonical" href="https://spring1944.github.io">
@@ -23,6 +28,17 @@
   <meta property="og:site_name" content="Spring:1944">
 </head>
 <body>
+
+<script>
+addEventListener('activate', event => {
+  event.waitUntil(async function() {
+    if (self.registration.navigationPreload) {
+      // Enable navigation preloads!
+      await self.registration.navigationPreload.enable();
+    }
+  }());
+});
+</script>
 
 <!-- Image/video fixed background, controlled by main.js. -->
 <div id="video_background">
@@ -57,7 +73,7 @@
       <!-- Hide the right msg in small-devices to avoid nthe line break -->
       <ul class="nav navbar-nav pull-right visible-lg visible-md hidden-sm hidden-xs">
         <div style="float:left;">
-          <p style="padding-top:20px; margin-right:10px;">Change language ?<a href="/fr/index.html" style="padding-top:20px; padding-left: 10px;"><img src="images/flag/fr.svg" alt="" width="30px" height="17px"></a></p>
+          <p style="padding-top:20px; margin-right:10px;">Change language ?<a href="/fr/index.html" style="padding-top:20px; padding-left: 10px;"><img src="images/flags/fr.png" alt="" width="20px" height="15px"></a></p>
         </div>
         <li><a href="https://github.com/spring1944/spring1944" class="s44">Free, Open Source WWII RTS</a></li>
       </ul>
@@ -75,13 +91,13 @@
     Free WWII RTS
   </h3>
   <a href="https://github.com/spring1944" title="Follow on Github" target="_blank">
-    <i class="icon icon-github"></i>
+    <i class="icon fab fa-github"></i>
   </a>
   <a href="https://riot.im/app/#/room/#s44:matrix.org" title="RSS Feed">
-    <i class="icon icon-rss"></i>
+    <i class="icon fas fa-rss"></i>
   </a>
   <a href="https://twitter.com/Spring19441" title="RSS Feed">
-    <i class="icon icon-twitter"></i>
+    <i class="icon fab fa-twitter"></i>
   </a>
 </div>
 
@@ -102,15 +118,12 @@
         year of WWII. Think of it like a cross between Company of Heroes and
         Supreme Commander, as designed by someone who played neither.
       </p>
-      <p class="quote visible-lg visible-md visible-sm hidden-xs">
-        Written By S44 Team &mdash; September 9, 2014
-      </p>
     </div>
   </div>
-  <div class="row visible-lg visible-md hidden-sm hidden-xs">
-	  <div class="col-xs-12"> 
-		  <h3>Spring1944 Trailer</h3>
-		  <video src="/videos/trailer.mp4" preload="auto"><a href="/videos/trailer.mp4">Spring1944 Trailer</a></video>
+  <div class="row visible-lg visible-md hidden-sm hidden-xs"  style="background-color: black; min-height: 500px;" >
+	  <div class="center"> 
+		  <h3 style="color: white;">Spring1944 Trailer</h3>
+		  <iframe width="700" height="450" sandbox="allow-same-origin allow-scripts" src="https://peertube.live/videos/embed/5091180e-9cf4-43d0-8bd0-975b1cce8fac" frameborder="0" allowfullscreen></iframe>
 	  </div>
   </div>
   <div class="row visible-lg visible-md hidden-sm hidden-xs">
