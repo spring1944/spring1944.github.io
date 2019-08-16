@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <title>Spring:1944 &mdash; Free, Open Source WWII RTS</title>
+  <title>Spring:1944 &mdash; Un jeu de stratégie en temps réel libre</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/flat-ui.min.css">
-  <link rel="stylesheet" href="css/imgslider.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/s44.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/imgslider.min.js"></script>
-  <script src="js/all.min.js"></script>
-  <script src="js/fontawesome.min.js"></script>
-
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/flat-ui.min.css">
+  <link rel="stylesheet" href="/css/imgslider.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/css/s44.css">
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/imgslider.min.js"></script>
+  <script src="/js/all.min.js"></script>
+  <script src="/js/fontawesome.min.js"></script>
 
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="/images/S44-logo-vector.png"/>
@@ -29,17 +28,6 @@
 </head>
 <body>
 
-<script>
-addEventListener('activate', event => {
-  event.waitUntil(async function() {
-    if (self.registration.navigationPreload) {
-      // Enable navigation preloads!
-      await self.registration.navigationPreload.enable();
-    }
-  }());
-});
-</script>
-
 <!-- Image/video fixed background, controlled by main.js. -->
 <div id="video_background">
 </div>
@@ -50,21 +38,21 @@ addEventListener('activate', event => {
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <img src="./images/S44-logo-vector.png" alt="" height="40">
+          <img src="/images/S44-logo-vector.png" alt="" height="40">
         </a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a href="#" class="s44">Home</a></li>
+        <li><a href="#" class="s44">Accueil</a></li>
         <li><a href="media" class="s44">Media</a></li>
-        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki#how-to-play" class="s44">Play</a></li>
-        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki/tutorial" class="s44">Learn</a></li>
-        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki/maps" class="s44">Maps</a></li>
+        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki#how-to-play" class="s44">Jouer</a></li>
+        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki/tutorial" class="s44">Apprendre</a></li>
+        <li><a target="_blank" href="https://github.com/spring1944/spring1944/wiki/maps" class="s44">Les cartes</a></li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle s44" href="#" id="navbarCommunityDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Community
+            La communauté
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarCommunityDropdown">
-                <a target="_blank" href="https://discuss.s44.eu/" class="s44">Forum</a><br>
+                <a target="_blank" href="https://discuss.s44.eu/" class="s44">Le Forum</a><br>
                 <a target="_blank" href="https://riot.im/app/#/room/#s44:matrix.org" class="s44">Matrix</a><br>
                 <a href="irc://irc.freenode.net/#s44" class="s44">IRC</a>
             </div>
@@ -73,9 +61,9 @@ addEventListener('activate', event => {
       <!-- Hide the right msg in small-devices to avoid nthe line break -->
       <ul class="nav navbar-nav pull-right visible-lg visible-md hidden-sm hidden-xs">
         <div style="float:left;">
-          <p style="padding-top:20px; margin-right:10px;">Change language ?<a href="/fr/index.html" style="padding-top:20px; padding-left: 10px;"><img src="images/flags/fr.png" alt="" width="20px" height="15px"></a></p>
+          <p style="padding-top:20px; margin-right:10px;">Changer la langue ?<a href="/index.html" style="padding-top:20px; padding-left: 10px;"><img src="/images/flags/en.png" alt="" width="20px" height="15px"></a></p>
         </div>
-        <li><a href="https://github.com/spring1944/spring1944" class="s44">Free, Open Source WWII RTS</a></li>
+        <li><a href="https://github.com/spring1944/spring1944" class="s44">Jeu de stratégie en temps réel libre</a></li>
       </ul>
     </div>
   </div>
@@ -83,12 +71,12 @@ addEventListener('activate', event => {
 
 <!-- Header -->
 <div class="container-fluid blog-cover str_brand">
-  <h1><img height="128" src="./images/S44-logo-vector.png" alt=""></h1>
+  <h1><img height="128" src="/images/S44-logo-vector.png" alt=""></h1>
   <h3 class="visible-lg visible-md visible-sm hidden-xs">
-    Free, Open Source WWII RTS
+    Jeu de stratégie en temps réel, gratuit et opensource sur la Seconde Guerre Mondiale
   </h3>
   <h3 class="hidden-lg hidden-md hidden-sm visible-xs">
-    Free WWII RTS
+    Jeu libre de stratégie en temps réelle sur la Seconde guerre mondiale
   </h3>
   <a href="https://github.com/spring1944" title="Follow on Github" target="_blank">
     <i class="icon fab fa-github"></i>
@@ -102,21 +90,19 @@ addEventListener('activate', event => {
 </div>
 
 <div class="container-fluid motto">
-  <h3>The War begins here!</h3>
+  <h3>LA GUERRE COMMENCE ICI !</h3>
 </div>
 
 <!-- Game description -->
 <div class="container-fluid section">
   <div class="row">
     <div class="col-xs-5">
-      <img class="img img-responsive img-massivebattle img-content" src="images/MassiveBattle.png" alt="" width="100%">
+      <img class="img img-responsive img-massivebattle img-content" src="/images/MassiveBattle.png" alt="" width="100%">
     </div>
     <div class="col-xs-5">
-      <h2 class="title">A WWII RTS game</h2>
+      <h2 class="title">Un jeu de stratégie en temps réelle sur la seconde guerre mondiale</h2>
       <p class="visible-lg visible-md visible-sm hidden-xs">
-        Spring: 1944 is an open source Real Time Strategy game set in the final
-        year of WWII. Think of it like a cross between Company of Heroes and
-        Supreme Commander, as designed by someone who played neither.
+        Spring: 1944 est un jeu opensource de stratégie en temps réellequi prend place durant la dernière année de la Seconde guerre mondiale. Un croisement entre Company of Heroes et Supreme Commander, dessiné par quelqu'un qui ne jouer ni à l'un ni à l'autre.
       </p>
     </div>
   </div>
@@ -161,60 +147,58 @@ addEventListener('activate', event => {
         units and buildings, with one of the
         <a href="https://github.com/spring1944/spring1944/wiki/factions">
           8 already available factions
-        </a>. The unique features of each faction, the huge number of units
-        potentially involved, and the wide variety of available combat theaters,
-        make each battle different.
+        </a>. Les fonctionnalités uniques des différentes factions, le nombre important d'unités 
+        potentiellement, et la grande variété de théâtres de combat disponibles,
+        rendent chaque bataille différente.
       </p>
       <p class="visible-lg visible-md hidden-sm hidden-xs">
-        The thing may quickly change on the battlefield!
+        Les choses peuvent vite changer sur le champ de bataille !
       </p>
     </div>
     <div class="col-xs-7 visible-lg hidden-md hidden-sm hidden-xs" style="padding-top:3%">
-      <img src="images/Snapshot_Land.png" onClick="resize()" alt="" width="30%">
-      <img src="images/Snapshot_Air.png" onClick="resize()" alt="" width="30%">
-      <img src="images/Snapshot_Water.png" onClick="resize()" alt="" width="30%">
+      <img src="/images/Snapshot_Land.png" alt="" width="30%">
+      <img src="/images/Snapshot_Air.png" alt="" width="30%">
+      <img src="/images/Snapshot_Water.png" alt="" width="30%">
     </div>
     <div class="col-xs-7 hidden-lg visible-md visible-sm visible-xs" style="padding-top:3%">
-      <img src="images/Snapshot_Land.png" alt="" width="45%">
-      <img src="images/Snapshot_Air.png" alt="" width="45%">
-      <img src="images/Snapshot_Water.png" alt="" width="45%" style="margin-left:22%;">
+      <img src="/images/Snapshot_Land.png" alt="" width="45%">
+      <img src="/images/Snapshot_Air.png" alt="" width="45%">
+      <img src="/images/Snapshot_Water.png" alt="" width="45%" style="margin-left:22%;">
     </div>
   </div>
   <div class="row">
     <div class="col-xs-6" style="padding-top:1%">
       <div class="slider responsive">
 				<div class="left image">
-					<img src="images/gfx_old.png"/>
+					<img src="/images/gfx_old.png"/>
 				</div>
 				<div class="right image">
-					<img src="images/gfx_new.png"/>
+					<img src="/images/gfx_new.png"/>
 				</div>
 			</div>
     </div>
     <div class="col-xs-6">
       <h2 class="title">Spring as you've never seen it before</h2>
       <p class="visible-lg visible-md visible-sm hidden-xs">
-        Spring:1944 is based on the excellent <a href="https://springrts.com/">
-        Spring RTS engine</a>. However, the LUA API has been applied to boost it
-        with several graphic improvements, namely:
+        Spring:1944 est base sur l'excellent moteur de jeu<a href="https://springrts.com/">
+        Spring RTS</a>. Cependant, l'API LUA a permis d'améliorer le jeu sur différents plans au niveau du graphisme. 
+        En voici une liste non-exhaustive :
       </p>
       <ul class="visible-lg visible-md visible-sm hidden-xs">
-        <li>Screen Space Ambient Occlusion</li>
-        <li>Cook-Torrance microfacets shading</li>
-        <li>Gamma correction</li>
-        <li>Tone Mapping</li>
-        <li>Vignetting</li>
-        <li>Color aberration</li>
+        <li>Occlusion ambiante dans l'espace de l'écran</li>
+        <li>Ombrage des microfaisceaux Cook-Torrance</li>
+        <li>Correction Gamma</li>
+        <li>Cartographie des tonalités</li>
+        <li>Vignettage</li>
+        <li>Aberration de couleur</li>
       </ul>
       <p class="visible-lg visible-md hidden-sm hidden-xs">
-        Such boosted graphics stack may help you to experience a better
-        inmersion on the universe of the World War II, the biggest war scourged
-        human-beings.
+        Une telle collection de graphismes pourra vous aider à miex vous immerger dans l'univers 
+        de la Seconde Guerre mondiale, la guerre qui a le plus ravagé les êtres humains.
       </p>
       <p class="visible-lg visible-md hidden-sm hidden-xs">
-        You can learn more about enabling the graphic improvements
-        <a href="https://github.com/spring1944/spring1944/wiki/gfx">on the
-        wiki</a>.
+        Vous pouvez en savoir plus sur comment activer ces améliorations graphiques
+        <a href="https://github.com/spring1944/spring1944/wiki/gfx">dans la documentation (en anglais)</a>.
       </p>
     </div>
   </div>
@@ -225,29 +209,26 @@ addEventListener('activate', event => {
     <a href="https://spring1944.github.io">Spring: 1944 Team</a> &middot;
     <a href="#" class="home">Home</a>
     <a href="media">Media</a>
-    <a target="_blank" href="https://github.com/spring1944/spring1944#how-to-play">Play</a>
-    <a target="_blank" href="https://think.nsupdate.info/s44/tutorial/">Learn</a>
+    <a target="_blank" href="https://github.com/spring1944/spring1944#how-to-play">Jouer</a>
+    <a target="_blank" href="https://think.nsupdate.info/s44/tutorial/">Apprendre</a>
     <a href="https://github.com/spring1944/spring1944/wiki/maps">Maps</a>
     <a target="_blank" href="https://discuss.s44.eu/" class="s44">Forum</a>
 
   <div class="social">
-    <a href="https://github.com/spring1944" title="Follow on Github" target="_blank"><i class="icon icon-github black"></i></a>
+    <a href="https://github.com/spring1944" title="Suivez-nous sur Github " target="_blank"><i class="icon icon-github black"></i></a>
     <a href="https://riot.im/app/#/room/#s44:matrix.org" title="RSS Feed">
       <i class="icon icon-rss black"></i>
     </a>
-    <a href="https://twitter.com/spring19441" title="Follow on Twitter" target="_blank"><i class="icon fab fa-twitter black"></i></a>
-    <a href="https://framapiaf.org/@spring1944" title="Follow on Mastodon" target="_blank"><i class="icon fab fa-mastodon"></i></a>
   </div>
-  <div class="text-center small"> All content CC-BY-NC Spring: 1944 Team </div>
+  <div class="text-center small"> Tout le contenu est sous licence CC-BY-NC Spring: 1944 </div>
 </div>
 
 
 <script type="text/javascript">
   $('.slider').slider();
 </script>
-
-<script src="js/detectmobilebrowser.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/js/detectmobilebrowser.min.js"></script>
+<script src="/js/main.js"></script>
 
 </body>
 </html>
